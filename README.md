@@ -1,2 +1,2 @@
-# aleo_wallet_site
-Aleo Wallet Landing Site
+# Aleo Wallet Site
+Landing Site for the Aleo Wallet 
