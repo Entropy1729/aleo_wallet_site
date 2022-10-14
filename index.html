@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/atropos/atropos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Aleo Wallet Site</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="w-52" src="images/aleowallet-logo.svg" />
+        <ul class="nav-options">
+          <a href="https://twitter.com/AleoWallet" target="_blank"><li>Twitter</li></a>
+          <a href="https://discord.gg/n6v7Pfczuy" target="_blank"><li>Discord</li></a>
+          <a class="p-3 rounded-lg bg-aleo-transparent-blue text-aleo-blue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-blue transition-all duration-300" href="https://chrome.google.com/webstore/detail/aleo-wallet/gnebojbimjelkmlfifljmilecfnonhnc" target="_blank"><li>Download Aleo Wallet</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="landing">
+        <div>
+          <h1 class="title">Aleo Wallet</h1>
+          <h2 class="subtitle">A private wallet for a private network. A safe and easy way to interact with the Aleo blockchain.</h2>
+          <button href="https://chrome.google.com/webstore/detail/aleo-wallet/gnebojbimjelkmlfifljmilecfnonhnc" target="_blank" class="btn-light">Try our wallet!</button>
+        </div>
+        <!-- main Atropos container (required), add your custom class here -->
+        <div class="atropos my-atropos">
+          <!-- scale container (required) -->
+          <div class="atropos-scale">
+            <!-- rotate container (required) -->
+            <div class="atropos-rotate">
+              <!-- inner container (required) -->
+              <div class="atropos-inner rounded-2xl">
+                <!-- put your custom content here -->
+                <img src="/images/phone.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>2022 © Aleo Wallet</footer>
+    <script type="module" src="./js/atropos.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

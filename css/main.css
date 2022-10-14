@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --aleo-dark: #12141d;
+  --aleo-no-dark: #1e2029;
+  --aleo-border: #343746;
+  --aleo-gray: #494e64;
+  --aleo-light: #b2b6c7;
+  --aleo-green: #18e48f;
+  --aleo-blue: #00c0f9;
+  --aleo-lightblue: #01eaef;
+  --aleo-transparent: rgba(0, 0, 0, 0.5);
+  --aleo-transparent-lightblue: rgba(1, 234, 239, 0.25);
+  --aleo-transparent-blue: rgba(0, 192, 249, 0.25);
+  --aleo-transparent-green: rgba(24, 228, 143, 0.25);
+}
+body {
+  @apply bg-aleo-dark text-white relative;
+}
+nav {
+  @apply absolute top-0 left-0 right-0 py-7 px-10 flex justify-between;
+}
+footer {
+  @apply text-center text-aleo-light py-4 absolute bottom-0 left-0 right-0;
+}
+.nav-options {
+  @apply flex gap-10 items-center;
+}
+.landing {
+  @apply flex gap-52 justify-between items-center pl-40 pr-52 w-screen h-screen;
+}
+.title {
+  @apply text-6xl font-bold;
+}
+.subtitle {
+  @apply text-2xl my-4 font-extralight max-w-[40rem];
+}
+.btn-light {
+  @apply p-3 rounded-lg bg-aleo-transparent-lightblue text-aleo-lightblue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-lightblue transition-all duration-300;
+}
+.my-atropos {
+  @apply w-1/4 min-w-[15rem];
+}
