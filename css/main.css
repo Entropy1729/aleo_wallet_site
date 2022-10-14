@@ -24,7 +24,13 @@ body {
   --aleo-transparent-green: rgba(24, 228, 143, 0.25);
 }
 body {
-  @apply bg-aleo-dark text-white relative;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  @apply text-white relative;
 }
 nav {
   @apply absolute top-0 left-0 right-0 py-7 px-10 flex justify-between;
@@ -39,14 +45,14 @@ footer {
   @apply flex gap-52 justify-between items-center pl-40 pr-52 w-screen h-screen;
 }
 .title {
-  @apply text-6xl font-bold;
+  @apply text-6xl font-bold shadow-lg;
 }
 .subtitle {
-  @apply text-2xl my-4 font-extralight max-w-[40rem];
+  @apply text-2xl my-4 font-extralight max-w-[40rem] shadow-lg;
 }
 .btn-light {
   @apply p-3 rounded-lg bg-aleo-transparent-lightblue text-aleo-lightblue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-lightblue transition-all duration-300;
 }
 .my-atropos {
-  @apply w-1/4 min-w-[15rem];
+  @apply w-1/4 min-w-[20rem];
 }

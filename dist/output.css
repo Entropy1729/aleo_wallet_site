@@ -617,10 +617,6 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
 }
@@ -648,9 +644,12 @@ body {
   --aleo-transparent-green: rgba(24, 228, 143, 0.25);
 }
 
-body{
+body {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  background-color: var(--aleo-dark);
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -700,6 +699,9 @@ footer{
   font-size: 3.75rem;
   line-height: 1;
   font-weight: 700;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .subtitle{
@@ -709,6 +711,9 @@ footer{
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 200;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .btn-light{
@@ -731,7 +736,7 @@ footer{
 
 .my-atropos{
   width: 25%;
-  min-width: 15rem;
+  min-width: 20rem;
 }
 
 .hover\:shadow-\[0px_0px_8px_1px\]:hover{
