@@ -23,6 +23,9 @@ body {
   --aleo-transparent-blue: rgba(0, 192, 249, 0.25);
   --aleo-transparent-green: rgba(24, 228, 143, 0.25);
 }
+html {
+  background-color: #000;
+}
 body {
   background-image: url("../images/background.jpg");
   background-position: center;
@@ -33,26 +36,29 @@ body {
   @apply text-white relative;
 }
 nav {
-  @apply absolute top-0 left-0 right-0 py-7 px-10 flex justify-between;
+  @apply absolute top-0 left-0 right-0 p-5 lg:py-7 lg:px-10 flex justify-between;
+}
+nav .logo {
+  @apply w-36 lg:w-52;
 }
 footer {
   @apply text-center text-aleo-light py-4 absolute bottom-0 left-0 right-0;
 }
 .nav-options {
-  @apply flex gap-10 items-center;
+  @apply hidden lg:flex gap-10 items-center;
 }
 .landing {
-  @apply flex gap-52 justify-between items-center pl-40 pr-52 w-screen h-screen;
+  @apply lg:flex gap-52 justify-between items-center py-32 px-6 lg:pl-40 lg:pr-52 w-screen  lg:h-screen;
 }
 .title {
-  @apply text-6xl font-bold shadow-lg;
+  @apply text-5xl lg:text-6xl font-bold shadow-lg;
 }
 .subtitle {
-  @apply text-2xl my-4 font-extralight max-w-[40rem] shadow-lg;
+  @apply text-xl lg:text-2xl my-4 font-extralight max-w-[40rem] shadow-lg;
 }
 .btn-light {
-  @apply p-3 rounded-lg bg-aleo-transparent-lightblue text-aleo-lightblue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-lightblue transition-all duration-300;
+  @apply p-3 rounded-lg text-aleo-dark bg-aleo-blue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-lightblue transition-all duration-300;
 }
 .my-atropos {
-  @apply w-1/4 min-w-[20rem];
+  @apply w-1/4 min-w-[20rem] my-10 lg:my-0 mx-auto;
 }

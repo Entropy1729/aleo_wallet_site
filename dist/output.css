@@ -587,8 +587,8 @@ video {
   }
 }
 
-.w-52{
-  width: 13rem;
+.pointer-events-none{
+  pointer-events: none;
 }
 
 .rounded-lg{
@@ -603,12 +603,26 @@ video {
   background-color: var(--aleo-transparent-blue);
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.stroke-white{
+  stroke: #fff;
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .text-aleo-blue{
   color: var(--aleo-blue);
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .transition-all{
@@ -644,6 +658,10 @@ body {
   --aleo-transparent-green: rgba(24, 228, 143, 0.25);
 }
 
+html {
+  background-color: #000;
+}
+
 body {
   background-image: url("../images/background.jpg");
   background-position: center;
@@ -661,10 +679,26 @@ nav{
   right: 0px;
   display: flex;
   justify-content: space-between;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 1024px){
+  nav{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+nav .logo{
+  width: 9rem;
+}
+
+@media (min-width: 1024px){
+  nav .logo{
+    width: 13rem;
+  }
 }
 
 footer{
@@ -679,24 +713,39 @@ footer{
 }
 
 .nav-options{
-  display: flex;
+  display: none;
   align-items: center;
   gap: 2.5rem;
 }
 
+@media (min-width: 1024px){
+  .nav-options{
+    display: flex;
+  }
+}
+
 .landing{
-  display: flex;
-  height: 100vh;
   width: 100vw;
   align-items: center;
   justify-content: space-between;
   gap: 13rem;
-  padding-left: 10rem;
-  padding-right: 13rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px){
+  .landing{
+    display: flex;
+    height: 100vh;
+    padding-left: 10rem;
+    padding-right: 13rem;
+  }
 }
 
 .title{
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 700;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -704,23 +753,37 @@ footer{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 1024px){
+  .title{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
 .subtitle{
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 40rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 200;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 1024px){
+  .subtitle{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 .btn-light{
   border-radius: 0.5rem;
-  background-color: var(--aleo-transparent-lightblue);
+  background-color: var(--aleo-blue);
   padding: 0.75rem;
-  color: var(--aleo-lightblue);
+  color: var(--aleo-dark);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -735,8 +798,19 @@ footer{
 }
 
 .my-atropos{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
   width: 25%;
   min-width: 20rem;
+}
+
+@media (min-width: 1024px){
+  .my-atropos{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .hover\:shadow-\[0px_0px_8px_1px\]:hover{
@@ -748,4 +822,10 @@ footer{
 .hover\:shadow-aleo-blue:hover{
   --tw-shadow-color: var(--aleo-blue);
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+@media (min-width: 1024px){
+  .lg\:pointer-events-auto{
+    pointer-events: auto;
+  }
 }
