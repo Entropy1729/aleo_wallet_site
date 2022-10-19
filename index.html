@@ -13,36 +13,105 @@
     <header>
       <nav>
         <img class="logo" src="images/aleowallet-logo.svg" />
-        <img class="menu stroke-white" src="images/hamburger.svg" />
-        <ul class="nav-options">
+        <img class="menu-trigger stroke-white" src="images/hamburger.svg" />
+        <ul class="nav-options hide-menu">
+          <li class="border-b border-b-aleo-light py-3 text-2xl lg:hidden px-10">Aleo Wallet</li>
           <a href="https://twitter.com/AleoWallet" target="_blank"><li>Twitter</li></a>
           <a href="https://discord.gg/n6v7Pfczuy" target="_blank"><li>Discord</li></a>
-          <a class="p-3 rounded-lg bg-aleo-transparent-blue text-aleo-blue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-blue transition-all duration-300" href="https://chrome.google.com/webstore/detail/aleo-wallet/gnebojbimjelkmlfifljmilecfnonhnc" target="_blank"><li>Download Aleo Wallet</li></a>
+          <a class="btn-light" href="https://chrome.google.com/webstore/detail/aleo-wallet/gnebojbimjelkmlfifljmilecfnonhnc" target="_blank"><li>Download Aleo Wallet</li></a>
         </ul>
       </nav>
     </header>
     <main>
       <div class="landing">
         <div>
-          <h1 class="title">Aleo Wallet</h1>
-          <h2 class="subtitle">The ultimate wallet for private applications.</h2>
+          <h1 class="title">The ultimate wallet for private applications.</h1>
+          <p class="subtitle">The official wallet for aleo testnet3.</p>
           <button href="https://chrome.google.com/webstore/detail/aleo-wallet/gnebojbimjelkmlfifljmilecfnonhnc" target="_blank" class="btn-light download-btn"></button>
         </div>
-        <!-- main Atropos container (required), add your custom class here -->
         <div class="atropos my-atropos pointer-events-none lg:pointer-events-auto">
-          <!-- scale container (required) -->
           <div class="atropos-scale">
-            <!-- rotate container (required) -->
             <div class="atropos-rotate">
-              <!-- inner container (required) -->
               <div class="atropos-inner rounded-2xl">
-                <!-- put your custom content here -->
                 <img src="/images/preview.png" />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="flex flex-col justify-center items-center gap-10 my-20">
+        <h2>Coming soon!</h2>
+        <div class="soon">
+          <div>
+            <img src="/images/safari.svg" alt="Safari logo" />
+            <p>Safari</p>
+          </div>
+          <div>
+            <img src="/images/firefox.svg" alt="Firefox logo" />
+            <p>Firefox</p>
+          </div>
+          <div>
+            <img src="/images/google-play.svg" alt="Google Play" />
+            <p>Android</p>
+          </div>
+          <div>
+            <img src="/images/ios.svg" alt="IOS" />
+            <p>IOS</p>
+          </div>
+        </div>
+        <button class="btn-light">Join the waitlist!</button>
+      </div>
+      <!-- <div class="flex flex-col justify-center items-center gap-10 my-20">
+        <h2>Features</h2>
+        <div class="features relative">
+          <div>video</div>
+          <div>
+            <div class="feature">
+              <p>Transfer system</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/wallet.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="feature">
+              <p>Transaction History</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/transfer.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="feature">
+              <p>Explorer integration</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/feature.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="feature">
+              <p>Account Generator</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/feature.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="feature">
+              <p>Import Account</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/feature.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="feature">
+              <p>Multiple Account Management</p>
+              <video class="opacity-0" autoplay muted loop>
+                <source src="images/feature.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </main>
     <footer>2022 © Aleo Wallet</footer>
     <script type="module" src="./js/atropos.min.js"></script>
