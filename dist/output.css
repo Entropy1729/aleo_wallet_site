@@ -648,11 +648,14 @@ html {
   background-color: #000;
 }
 
-body {
-  background-image: url("../images/background.jpg");
+.landing {
+  background-image: url("../images/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body{
   position: relative;
   overflow-x: hidden;
   padding-left: 1.25rem;
