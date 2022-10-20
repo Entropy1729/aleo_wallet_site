@@ -1,0 +1,25 @@
+{
+  "name": "aleo_wallet_site",
+  "version": "1.0.0",
+  "description": "Landing Site for the Aleo Wallet",
+  "main": "index.js",
+  "dependencies": {
+    "atropos": "^1.0.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Entropy1729/aleo_wallet_site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Entropy1729/aleo_wallet_site/issues"
+  },
+  "homepage": "https://github.com/Entropy1729/aleo_wallet_site#readme"
+}
