@@ -666,7 +666,7 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   body{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -685,7 +685,7 @@ nav{
   padding: 1.25rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   nav{
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
@@ -792,7 +792,7 @@ footer{
   width: 9rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .logo{
     width: 13rem;
   }
@@ -804,7 +804,7 @@ footer{
   gap: 8rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .landing{
     display: flex;
     height: 100vh;
@@ -820,7 +820,7 @@ footer{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .title{
     font-size: 3.75rem;
     line-height: 1;
@@ -828,8 +828,8 @@ footer{
 }
 
 .subtitle{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
   max-width: 40rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -839,7 +839,7 @@ footer{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .subtitle{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -880,7 +880,7 @@ footer{
   gap: 2.5rem;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1024px){
   .soon{
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 5rem;

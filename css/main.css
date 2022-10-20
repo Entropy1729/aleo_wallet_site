@@ -33,10 +33,10 @@ html {
   background-size: cover;
 }
 body {
-  @apply text-white relative overflow-x-hidden px-5 py-32 md:py-10 md:px-32;
+  @apply text-white relative overflow-x-hidden px-5 py-32 lg:py-10 lg:px-32;
 }
 nav {
-  @apply absolute top-0 left-0 right-0  md:py-7 p-5 md:px-10 flex justify-between;
+  @apply absolute top-0 left-0 right-0  lg:py-7 p-5 lg:px-10 flex justify-between;
 }
 nav ul a {
   @apply max-w-[12rem];
@@ -66,16 +66,16 @@ footer {
   @apply opacity-0 pointer-events-none lg:opacity-100 lg:pointer-events-auto;
 }
 .logo {
-  @apply w-36 md:w-52;
+  @apply w-36 lg:w-52;
 }
 .landing {
-  @apply md:flex gap-32 justify-center items-center md:h-screen;
+  @apply lg:flex gap-32 justify-center items-center lg:h-screen;
 }
 .title {
-  @apply text-5xl md:text-6xl font-bold shadow-lg;
+  @apply text-5xl lg:text-6xl font-bold shadow-lg;
 }
 .subtitle {
-  @apply text-xl md:text-2xl my-4 font-extralight max-w-[40rem] shadow-lg;
+  @apply text-xl lg:text-2xl mt-5 mb-10 font-extralight max-w-[40rem] shadow-lg;
 }
 .btn-light {
   @apply p-3 rounded-lg text-aleo-dark bg-aleo-blue hover:shadow-[0px_0px_8px_1px] hover:shadow-aleo-lightblue transition-all duration-300;
@@ -84,7 +84,7 @@ footer {
   @apply w-1/4 min-w-[20rem] mx-auto my-10;
 }
 .soon {
-  @apply grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-20 justify-center;
+  @apply grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 justify-center;
 }
 .soon div {
   @apply flex flex-col justify-center items-center gap-5;
