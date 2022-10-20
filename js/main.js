@@ -16,17 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
   menu();
   const browser = () => {
     const button = document.querySelector(".download-btn");
-    if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1) {
+    /* if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1) {
       button.innerHTML = "Download for Opera";
     } else if (navigator.userAgent.indexOf("Edg") != -1) {
       button.innerHTML = "Download for Edge";
-    } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+    } else  */ if (navigator.userAgent.indexOf("Chrome") != -1) {
       button.innerHTML = "Download for Chrome";
-    } else if (navigator.userAgent.indexOf("Safari") != -1) {
+    } /* else if (navigator.userAgent.indexOf("Safari") != -1) {
       button.innerHTML = "Download for Safari";
     } else if (navigator.userAgent.indexOf("Firefox") != -1) {
       button.innerHTML = "Download for Firefox";
-    } else {
+    } */ else {
       button.innerHTML = "Try our wallet!";
     }
   };
