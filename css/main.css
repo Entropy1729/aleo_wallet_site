@@ -36,7 +36,7 @@ body {
   @apply text-white relative overflow-x-hidden px-5 py-32 lg:py-10 lg:px-32;
 }
 nav {
-  @apply absolute top-0 left-0 right-0  lg:py-7 p-5 lg:px-10 flex justify-between;
+  @apply absolute top-0 left-0 right-0  lg:py-7 p-5 lg:px-10 flex justify-between items-center;
 }
 nav ul a {
   @apply max-w-[12rem];
@@ -51,7 +51,7 @@ footer {
   @apply text-center text-aleo-light py-4 absolute bottom-0 left-0 right-0;
 }
 .nav-options {
-  @apply flex flex-col gap-8 px-10 absolute top-0 left-0 right-0 w-screen h-screen z-10 bg-aleo-dark py-20 items-center lg:w-auto lg:h-auto lg:relative lg:flex-row lg:p-0 lg:items-center lg:bg-transparent lg:gap-10;
+  @apply flex flex-col gap-8 px-10 absolute top-0 left-0 right-0 w-screen h-screen z-10 bg-aleo-dark py-20 items-center lg:w-auto lg:h-auto lg:relative lg:flex-row lg:p-0 lg:bg-transparent lg:gap-10;
 }
 .overflow {
   @apply overflow-y-hidden;
