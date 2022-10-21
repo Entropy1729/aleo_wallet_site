@@ -93,10 +93,10 @@ footer {
   @apply w-10;
 }
 .features {
-  @apply grid grid-cols-2 gap-5 my-10 items-center;
+  @apply lg:grid grid-cols-2 gap-20 mb-10 items-center;
 }
 .feature {
-  @apply p-5 text-center;
+  @apply text-center p-3 border border-aleo-blue mb-5 rounded-lg lg:hover:bg-aleo-transparent-blue;
 }
 h2 {
   padding: 0.5rem 2rem;
@@ -109,6 +109,7 @@ h2 {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-.feature video {
-  @apply transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-0 w-2/3 transition-opacity duration-300;
+.feature video,
+.feature img {
+  @apply hidden lg:block transform -translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-0 max-h-[100%] transition-opacity duration-300 rounded-xl;
 }

@@ -35,11 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const features = document.querySelectorAll(".feature");
     features.forEach((feature) => {
       feature.addEventListener("mouseenter", () => {
-        feature.querySelector("video").classList.remove("opacity-0");
-        feature.querySelector("video").style.opacity = "1";
+        document.querySelector("img.wallet").style.opacity = "0";
+        feature.querySelector(".preview").style.opacity = "1";
       });
       feature.addEventListener("mouseleave", () => {
-        feature.querySelector("video").style.opacity = "0";
+        document.querySelector("img.wallet").style.opacity = "1";
+        feature.querySelector(".preview").style.opacity = "0";
       });
     });
   };
