@@ -34,12 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const preview = () => {
     const features = document.querySelectorAll(".feature");
     features.forEach((feature) => {
-      feature.addEventListener("mouseenter", () => {
-        feature.querySelector("video").classList.remove("opacity-0");
-        feature.querySelector("video").style.opacity = "1";
-      });
-      feature.addEventListener("mouseleave", () => {
-        feature.querySelector("video").style.opacity = "0";
+      feature.addEventListener("click", () => {
+        features.forEach((featureSelected) => {
+          featureSelected.classList.remove("selected");
+        });
+        feature.classList.add("selected");
       });
     });
   };
