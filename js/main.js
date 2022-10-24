@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const preview = () => {
     const features = document.querySelectorAll(".feature");
     features.forEach((feature) => {
-      feature.addEventListener("mouseenter", () => {
-        document.querySelector("img.wallet").style.opacity = "0";
-        feature.querySelector(".preview").style.opacity = "1";
-      });
-      feature.addEventListener("mouseleave", () => {
-        document.querySelector("img.wallet").style.opacity = "1";
-        feature.querySelector(".preview").style.opacity = "0";
+      feature.addEventListener("click", () => {
+        features.forEach((featureSelected) => {
+          featureSelected.classList.remove("selected");
+        });
+        feature.classList.add("selected");
       });
     });
   };
